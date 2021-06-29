@@ -9,33 +9,46 @@ body{
     height: 100vh;
     background: linear-gradient(120deg, lightblue, lightgreen);
 }
+.icon{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
 .container{
     text-align: center;
     width: 350px;
-    height: 500px;
+    height: 510px;
     margin: 50px 0;
-    background: white;
-    border-radius: 10px;
+    background: #22252d;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
 }
 .input{
     height: 100px;
     width: 300px;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
     margin: 30px 0;
-    background: #fff;
-    font-size: 20px;
-    text-align: center;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    color: #fdfdfe;
+    position: relative;
+    top: 50px;
 }
 .button{
-    width: 300px;
-    margin: auto;
-    /* background: black; */
+    width: 100%;
+    height: 500px;
+    background: #2a2d37;
+    border-radius: 40px;
 }
 .btn{
     width: 50px;
     height: 40px;
-    background: silver;
+    background: #282b33;
     color: white;
     margin: 10px;
     border: none;
@@ -44,7 +57,28 @@ body{
     cursor: pointer;
     transition: all 0.5s ease;
 }
+.hasil{
+    font-weight: 600;
+    font-size: 35px;
+}
 .btn:hover{
-    background: white;
-    color: black;
+    background: #fdfdfe;
+    color: #282b33;
+}
+
+.color{
+    color: rgb(50, 187, 180);
+}
+.color:hover{
+    color: rgb(50, 187, 180);
+}
+.salmon{
+    color: salmon;
+}
+.salmon:hover{
+    color: salmon;
+}
+.lebar{
+    padding: 0 65px;
+    margin-bottom: 50px;
 }
