@@ -5,6 +5,7 @@ const hasil = document.querySelector('.hasil');
 const clear = document.querySelector('.clear');
 const darkMode = document.querySelector('.dark-mode');
 const container = document.querySelector('.container');
+const salmon = document.querySelectorAll('.salmon');
 
 // looping button
 for (let i = 0; i < button.length; i++){
@@ -24,8 +25,13 @@ button[2].addEventListener('click', function(){
 
 // event tombol hasil / =
 hasil.addEventListener('click', function(){
-    input.value = eval(input.value);
-    input1.style.opacity = '1';
+    if (input.value.length == 0){
+        input.value = '';
+    }else{
+        input.value = eval(input.value);
+        input1.style.opacity = '1';
+    }
+    
 });
 
 // event clear all value input
@@ -38,3 +44,4 @@ clear.addEventListener('click', function(){
 darkMode.addEventListener('click', function(){
     container.style.background = '#fff';
 });
+
