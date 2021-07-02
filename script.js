@@ -6,12 +6,15 @@ const clear = document.querySelector('.clear');
 const darkMode = document.querySelector('.dark-mode');
 const container = document.querySelector('.container');
 const salmon = document.querySelectorAll('.salmon');
+const icon = document.querySelector('.icon');
+const btn = document.querySelector('.button');
 
 // looping button
 for (let i = 0; i < button.length; i++){
     // jika button index ke-i di click maka akan menambahkan ke dalam value input
     button[i].addEventListener('click', function(){
-        input.value += button[i].value;
+        // let hasil = input.value;
+input.value += button[i].value;
         input1.value = input.value;
     });
 }
@@ -31,7 +34,7 @@ hasil.addEventListener('click', function(){
         input.value = eval(input.value);
         input1.style.opacity = '1';
     }
-    
+    console.log(input.value);
 });
 
 // event clear all value input
@@ -39,9 +42,5 @@ clear.addEventListener('click', function(){
     input.value = '';
     input1.value = '';
     window.location.reload('Refresh');
-});
-
-darkMode.addEventListener('click', function(){
-    container.style.background = '#fff';
 });
 
