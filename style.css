@@ -7,29 +7,19 @@ body{
     display: flex;
     justify-content: center;
     height: 100vh;
-    background: lightblue;
+    background: linear-gradient(180deg, #8EC5FC, #E0C3FC);
 }
-.icon{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 20px;
-}
-.dark-mode{
-    cursor: pointer;
-}
-
 .container{
     text-align: center;
     min-width: 350px;
-    height: 610px;
+    height: 570px;
     margin: 20px 0;
     background: #22252d;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
 }
-.input-1{
+.history{
     height: 50px;
     width: 300px;
     position: relative;
@@ -42,7 +32,7 @@ body{
     background: transparent;
     animation: all 0.5s ease;
 }
-.input{
+.output{
     height: 100px;
     width: 300px;
     border: none;
@@ -74,27 +64,17 @@ body{
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.hasil{
-    font-size: 25px;
-}
-.btn:hover{
+.btn:active{
+    font-size: 12px;
     background: #85888f;
-    color: white;
 }
-
 .color{
     color: rgb(50, 187, 180);
 }
-.color:hover{
-    color: rgb(50, 187, 180);
-}
-.salmon{
+.operator{
     color: salmon;
 }
-.salmon:hover{
-    color: salmon;
-}
-.lebar{
+.zero{
     padding: 0 65px;
     margin-top: -20px;
 }

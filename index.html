@@ -4,56 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator || Coding Home</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <div class="container">
-        <div class="icon">
-            <div class="signal"><i class="fas fa-signal"></i></div>
-            <!-- <div class="dark-mode"><i class="fas fa-adjust"></i></div> -->
-            <div class="baterai"><i class="fas fa-battery-half"></i></div>
-        </div>
         <form action="">
-            <input class="input-1" type="text" value="" disabled> <br>
-            <input class="input" type="text" value="" disabled> <br>
+            <input class="history" type="text" value="" disabled> <br>
+            <input class="output" type="text" value="" disabled> <br>
 
             <div class="button">
-                <button class="btn clear color" type="button" value="">C</button>
+                <button class="btn clear color" type="button" value="" onclick="check">C</button>
                 <button class="btn minus color" type="button" value="-">MC</button>
                 <button class="btn remove color" type="button" value=""><i class="fas fa-backspace"></i></button>
-                <button class="btn bagi salmon" type="button" value="/" onkeyup="check"><i class="fas fa-percentage"></i></button> <br>
+                <button class="btn bagi operator" type="button" value="/" ><i class="fas fa-percentage"></i></button> <br>
 
-                <button class="btn tujuh" type="button" value="7">7</button>
-                <button class="btn delapan" type="button" value="8">8</button>
-                <button class="btn sembilan" type="button" value="9">9</button>
-                <button class="btn kali salmon" type="button" value="*" onkeyup="check"><i class="fas fa-times"></i></button>
+                <button class="btn" type="button" value="7">7</button>
+                <button class="btn" type="button" value="8">8</button>
+                <button class="btn" type="button" value="9">9</button>
+                <button class="btn kali operator" type="button" value="*"><i class="fas fa-times"></i></button>
                 <br>
 
-                <button class="btn empat" type="button" value="4">4</button>
-                <button class="btn lima" type="button" value="5">5</button>
-                <button class="btn enam" type="button" value="6">6</button>
-                <button class="btn minus salmon" type="button" value="-" onkeyup="check"><i class="fas fa-minus"></i></button>
+                <button class="btn" type="button" value="4">4</button>
+                <button class="btn" type="button" value="5">5</button>
+                <button class="btn" type="button" value="6">6</button>
+                <button class="btn minus operator" type="button" value="-"><i class="fas fa-minus"></i></button>
                 <br>
 
-                <button class="btn empat" type="button" value="1">1</button>
-                <button class="btn lima" type="button" value="2">2</button>
-                <button class="btn enam" type="button" value="3">3</button>
-                <button class="btn minus salmon" type="button" value="+" onkeyup="check"><i class="fas fa-plus"></i></button>
+                <button class="btn" type="button" value="1">1</button>
+                <button class="btn" type="button" value="2">2</button>
+                <button class="btn" type="button" value="3">3</button>
+                <button class="btn minus operator" type="button" value="+"><i class="fas fa-plus"></i></button>
                 <br>
 
-                <button class="btn kosong lebar" type="button" value="0">0</button>
+                <button class="btn zero" type="button" value="0">0</button>
                 <button class="btn koma" type="button" style="font-size: 30px; text-align: center;" value=".">.</button>
-                <button class="btn hasil salmon" type="button">=</button>
+                <button class="btn equals operator" type="button"><i class="fas fa-equals"></i></button>
             </div>
         </form>
     </div>
-
-
-
-
+    <!-- Script JS -->
     <script src="script.js"></script>
 </body>
 </html>
